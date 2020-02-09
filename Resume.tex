@@ -5,7 +5,7 @@
 
 \begin{document}
 	\begin{minipage}[a]{1.0\textwidth}
-		\begin{center}
+		\begin{center}	%header%
 			{\HUGE Resume}\\
 			\textbf {Hudson Cassidy} \\
 			\textbf {Email} hudoc96@hotmail.com
@@ -13,9 +13,9 @@
 			\textbf {Github} https://github.com/CrimsonNynja \\
 		\end{center}
 	\end{minipage}
-	\begin{minipage}[t]{0.6\textwidth}
+	\begin{minipage}[t]{0.7\textwidth}
 		\cvsect{Work Experience}
-		\begin{entrylist}
+		\begin{entrylist}	%work experience%
 			\entry
 				{Halaxy}
 				{Application Developer}
@@ -25,72 +25,83 @@
 				{Plezzel}
 				{Developer}
 				{2018 - 2019}
-				{Worked as a developer as part of a small team on a Real Estate and Digital Marketing System. As part of this job, i have both lead projects, taught new employees, designed systems, and maintained old code, within the Agile methodology. Technologies included, PHP, Laravel, GraphQL, Git, Cpanel, HTML/CSS, Javascript, AWS. As part of this role I also took initiatives to improve the processes and efficiency of the overall company and platform, reducing developments time in some cases dramatically.}
-		\end{entrylist}	
+				{Joined a small start-up in the Real Estate / Digital Marketing space in Geelong as the 3rd developer. While there I took the following initiatives:
+				\begin{itemize}
+					\item Rewrote the email template engine, cutting development time from 1 week to a day per template. This system needed to allow each template to be styled and branded differently, as well as provide some rudimentary logic. This included separating out the data from the visuals, and providing a layer that ensures that email compatible HTML / CSS is produced.
+					\item Learned and used GraphQL and Laravel to rebuild the mobile app's backend from scratch.
+					\item Helped the team rewrite old code into new maintainable modules, including starting to write unit tests, and incorporate proper git processes (code reviews, better branch management) and start using Jira to manage sprints.
+				\end{itemize}
+				}
+		\end{entrylist}			
 		\cvsect{Education}
-		\begin{entrylist}
+		\begin{entrylist}	%education%
 			\entry
 				{RMIT}
-				{Bachelor of Compuer Science}
-				{2014-2017}
-				{Completed a Bachelor of Computer Science at RMIT Melbourne. The course covered languages such as java, C, \CC, MYSQL, python, \LaTeX  \  and web-based languages such as PHP, HTML/CSS and JavaScript. The course also delved into computational mathematics, the analysis of algorithms and data structures and all 3 major Operating systems. It also covered UML, common design methodologies such as agile and scrum, as well as common software engineering practices including source control like git. I also studied project management, along with 3d graphics and real-time rendering using the OpenGL library, including shaders with GLSL and took my advance electives in artificial intelligence and cloud computing.}
+				{Bachelor of Compuer Science (RMIT University)}
+				{2015-2017}
+				{Completed my Bachelor of Computer Science at RMIT Melbourne. I undertook electives in Real-Time Rendering in OpenGL and project management, and advance electives in Cloud Computing and Artificial Intelligence }
 		\end{entrylist}
-		\cvsect{Personal Projects}
-		\begin{entrylist}
+		\cvsect{Personal Projects}  %add a reasoning for each of these to exist%
+		\begin{entrylist}	%node API%
 			\entry
-				{\vphantom{1.0}}
-				{Game Engine}
+				{Node API}
+				{https://github.com/CrimsonNynja/MonsterHunterAPI-Node}
 				{}
-				{Made a bare bones engine written in \CC \ using the SFML library. It is built using the Entity Component System design pattern, and includes features such as: logging, animation, asset handling, gamestates and more.}
+				{Restful API made in mode, connecting to a mongoDB instance. This project uses the mongoose, and express packages. The database is also on my github (https://github.com/CrimsonNynja/monster-hunter-DB) This was made to learn some Node, and to provide a foundation for another react project i have in the works}
 		\end{entrylist}
-		\begin{entrylist}
+		\begin{entrylist}	%ECS%
 			\entry
-				{\vphantom{1.0}}
-				{Monster Hunter Database}
+				{Entity\newline Component\newline System}
+				{https://github.com/CrimsonNynja/UnderWorld2d-Engine}
 				{}
-				{A database written in MongoDB, from scratch to use as a testing database for any projects I might need random data for. This includes a wide array of information on monsters from the monster hunter series, as well as corresponding images.}
+				{Made a bare bones engine written in \CC \ using the SFML library, to help solidify some lower level programming concepts. It is built using the Entity Component System design pattern, and includes features such as: logging, animation, asset handling, gamestates and more.}
 		\end{entrylist}
-		\begin{entrylist}
+		\begin{entrylist}	%php trees%
 			\entry
-				{\vphantom{1.0}}
-				{PHP Tree Library}
+				{PHP Tree\newline Library}
+				{https://github.com/CrimsonNynja/PHP-Trees}
 				{}
-				{In progress Library for PHP that adds tree structures to use. The trees are designed to seamlessly work within the language, inheriting the iteratable class, accepting variatics and typeless data, and utilizing the latest features. Full unit tests are also provided for the work completed as well, written in PHP Unit, and built to PSR-4 standards. The latest release is also available as a composer package, or on a public git repo (check out my git from the link above)}
+				{Library for PHP that adds tree structures. The trees are designed to seamlessly work within the language, utilizing the latest PHP features. Full unit tests are also provided, written in PHP Unit, and built with PSR in mind. The latest release is also available as a composer package. I built this as PHP does not have any trees structure in its core, and there is no library that I can find for structure like a Rope. }
 		\end{entrylist}
 	\end{minipage}
-\begin{minipage}[t]{0.1\textwidth}
+\begin{minipage}[t]{0.05\textwidth}
 \hphantom{0.1}
 \end{minipage}
-	\begin{minipage}[t]{0.3\textwidth}
+	\begin{minipage}[t]{0.3\textwidth}		%side bar%
 		\cvsect{References}\\
 		\textbf{Max Bush} 04 0418 0650\\
 		\textbf{Jahryn Galbraith} 04 0905 4508\\
 
-		\cvsect{Areas of interest}\\
+		\cvsect{Current Areas of interest}\\
 		{PHP}\\
 		{Javascript (React, Node)}\\
 		{C++}\\
 		{Python}\\
 		{GraphQL}\\
+		{Data Structures}\\
 		{Test Frameworks}\\
-
-%		\cvsect{Skills}
-%			\\\textbf{Programming Languages}\\
-%			\begin{barchart}{3.0}
-%				\baritem{\CC}{100}
-%				\baritem{PHP}{100}
-%				\baritem{HTML/CSS}{70}
-%				\baritem{Python}{60}
-%				\baritem{Javascript}{50}
-%				\baritem{MySQL}{60}
-%			\end{barchart}
 		
-%			\textbf{Frameworks / Libraries}\\
-%			\begin{barchart}{3.0}
-%				\baritem{GraphQL}{80}
-%				\baritem{React}{10}
-%				\baritem{Laravel}{50}
-%				\baritem{SFML}{100}
-%			\end{barchart}
+		\cvsect{experience}\\
+		\\\textbf{Programming Languages}\\
+		\begin{barchart}{3.0}
+				\baritem{\CC}{100}
+				\baritem{PHP}{100}
+				\baritem{HTML/CSS}{70}
+				\baritem{Python}{60}
+				\baritem{Javascript}{50}
+				\baritem{MySQL}{50}
+		\end{barchart}
+				
+		\textbf{Tools / Frameworks}\\
+		\begin{barchart}{3.0}
+				\baritem{Git}{100}
+				\baritem{Jira}{100}
+				\baritem{Php-Unit}{80}
+				\baritem{SFML}{80}
+				\baritem{GraphQL}{50}
+				\baritem{React}{35}
+				\baritem{Node}{30}
+				\baritem{AWS}{30}
+			\end{barchart}
 	\end{minipage}
 \end{document}
