@@ -6,15 +6,13 @@
 \begin{document}
 	\begin{minipage}[a]{1.0\textwidth}
 		\begin{center}	%header%
-			{\HUGE Resume}\\
-			\textbf{}\\
-			\textbf {Hudson Cassidy} \\
-			\textbf {Email} hudoc96@hotmail.com
+			{\HUGE {Hudson Cassidy} \\}
+			\textbf{\\}
+			\textbf {Email} hudoc96@hotmail.com \\
 			\textbf {Phone} 04 666 514 65 \\
-			\textbf {Github} https://github.com/CrimsonNynja \\
 		\end{center}
 	\end{minipage}
-	\begin{minipage}[t]{0.7\textwidth}
+	\begin{minipage}[t]{1.0\textwidth}
 		\cvsect{Work Experience}
 		\begin{entrylist}	%work experience%
 			\entry
@@ -22,16 +20,16 @@
 				{Senior Developer}
 				{2021 - Current}
 				{Moved over to the financial services side of the business as a senior developer, focusing on the front end. Through this I've been part of a major uplift to a new design system and the change in banking partners off of NAB. I also led work on a loan comparison tool. 
-			During this period, I also moved to the consumer side of the business, working directly on the main realestate.com.au site. while here, I haves seen the release of a number of new features to the site, moved the main website to use more modern technology, and assisted with federated work
+			During this period, I also moved to the consumer side of the business, working directly on the main realestate.com.au site. while here, I have seen the release of a number of new features to the site, moved the main website to use more modern technology, and assisted with federated work
 				\begin{itemize}
-					\item Pushed hard for, and was successful in removing the squads legacy UI components, an replacing them with the company standard ones throughout the financial services systems
+					\item Was successful in removing the squads legacy UI components(React, CSS, heavy use of external dependencies), and replacing them with the company standard ones(React, styled-components) throughout the financial services systems. This both reduced the bundle sizes, fixed many discrepancies within the UI, improved accessibility, and reduced the amount of systems we needed to maintain
 					\item Lead large parts of the UI uplift within financial services
-					\item Lead a piece of work to add home loan comparisons to the main site
+					\item Lead a piece of work to add home loan comparisons to the main site. This was written in React, urql, styled-components, and also involved modernisation of the existing repo, moving off of flow and onto typescript
+					\item Ran an initiative to move the main site off of mocha/enzyme and onto jest/react-testing-library. Also lead the transition of this site to typescript off of flow
+					\item Rewrote the legacy system(jQuery, backbone.js) that saves collections of properties to one that uses a modern tech stack, based on react, urql. This was also moved to use the companies shared components, and turned into a micro frontend
+					\item Helped with federation from other teams into the main site
 					\item Tech mentor for the squad's graduate
 					\item Am a regular tech interviewer for new candidates to REA
-					\item Moved the main site off of mocha/enzyme and onto jest/react testing library. Also started the transition of this site from flow to typescript
-					\item Rewrote the legacy system that saves collections of properties to one that uses a modern tech stack, based on a micro front-end
-					\item Helped with federation from other teams into the main site
 				\end{itemize}								
 				}
 			\entry
@@ -40,11 +38,11 @@
 				{2020 - 2021}
 				{Joined REA as the first Melbourne developer in the mortgage side of the business. Through this I saw the completion of a major system to service loans, a refocus to migrate large amounts of legacy data to a new modern system, the integration of Salesforce and acquisition of Mortgage choice. I also received a promotion to senior developer during this time.
 				\begin{itemize}
-					\item Pushed for, and was successful in the adoption of standard company component libraries within the mortgage servicing frontend system
-					\item Converted all repos within my squad over to typescript, and was instrumental in the adoption in other squads in the tribe as well
-					\item Created and maintained the squads onboarding wiki
+					\item Pushed for, and was successful in the adoption of standard company component libraries within the mortgage servicing frontend system, bringing the look of the system in line with the rest of REA. As this team was originally aquired by REA, this was also the first piece of REA tech that was adopted by this tribe
+					\item Converted all repos within my squad over to typescript, and was instrumental in the adoption in other squads in the tribe as well. These systems previous lacked any type checking.
+					\item Developed documentation and maintained the squads onboarding wiki. This saved time, and was a central reference point that could be pointed to  from other teams as well
 					\item Reduced  build times for most repos by a significant amount
-					\item Lead the rollback strategy for the salesforce data migration
+					\item Lead the rollback strategy for the salesforce data migration. This migration was a year long endeavour, containing financial and mortgage data that was also used to pay the mortgage brokers. This rollback was vital if anything was to go wrong during any of the migration stages
 				\end{itemize}								
 				}
 			\entry
@@ -61,28 +59,13 @@
 		\cvsect{Education}
 		\begin{entrylist}	%education%
 			\entry
-				{RMIT}
-				{Bachelor of Computer Science (RMIT University)}
+				{RMIT University}
+				{Bachelor of Computer Science}
 				{2015-2017}
-				{Completed my Bachelor of Computer Science at RMIT Melbourne. I took my majors in Cloud Computing and Artificial Intelligence }
+				{}
 		\end{entrylist}
 	\end{minipage}
 \begin{minipage}[t]{0.05\textwidth}
 \hphantom{0.1}
 \end{minipage}
-	\begin{minipage}[t]{0.3\textwidth}		%side bar%
-		
-		\cvsect{Outside of Work}\\
-		{I play Piano}\\
-		{I've got a Husky}\\
-		{Love a good hike}\\
-		{Always adding plants to my garden}\\
-		
-		\cvsect{Programming favourites}\\
-		{{Typescript}}\\
-		{Node}\\
-		{{React}}\\
-		{AWS}\\
-
-	\end{minipage}
 \end{document}
